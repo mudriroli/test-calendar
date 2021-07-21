@@ -8,50 +8,6 @@ import {getDay, setHours, setMinutes, format} from 'date-fns';
 registerLocale("en-GB", enGB);
 
 
-/* function Calendar () {
-    const [selectedDate, setSelectedDate] = useState(null);
-    const isWeekday = (date) => {
-        const day = getDay(date);
-        return day !== 0 && day !== 6;
-    };
-    const filterPassedTime = (time) => {
-        const currentDate = new Date();
-        const selectedDate = new Date(time);
-
-        return currentDate.getTime() < selectedDate.getTime();
-      };
-
-
-    return (
-        <div className = 'container'>
-            <DatePicker
-            selected = {selectedDate}
-            onChange = {date => setSelectedDate(date)}
-            filterDate = {isWeekday}
-            filterTime = {filterPassedTime}
-            locale = "en-GB"
-            placeholderText = "Select a weekday"
-            showTimeSelect
-            timeIntervals = {60}
-            dateFormat = "yyyy-MM-d H:mm"
-            calendarStartDay = {1}
-            minTime={setHours(setMinutes(new Date(), 0), 9)}
-            maxTime={setHours(setMinutes(new Date(), 0), 17)}
-
-            />
-        </div>
-    )
-}
-
-export default Calendar
-ReactDOM.render(<Calendar />, document.getElementById('root')); */
-
-
-
-
-//TODO: piros jelölés foglaltra
-//TODO: üres inital state lekezelése
-
 class Calendar extends Component {
 
     constructor (props) {
